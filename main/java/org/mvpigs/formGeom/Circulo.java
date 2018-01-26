@@ -6,10 +6,11 @@ public class Circulo {
     double radio = 0d;
 
     public Circulo() {
-
+        super();
     }
 
     public Circulo(double radio) {
+        super();
         this.radio = radio;
     }
 
