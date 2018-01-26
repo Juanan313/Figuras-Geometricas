@@ -1,7 +1,7 @@
 package org.mvpigs.formGeom;
 import java.lang.Math.*;
 
-public class Circulo {
+public class Circulo extends FiguraGeometrica {
 
     double radio = 0d;
 
@@ -11,6 +11,11 @@ public class Circulo {
 
     public Circulo(double radio) {
         super();
+        this.radio = radio;
+    }
+
+    public Circulo(String nombre, double radio) {
+        super(nombre);
         this.radio = radio;
     }
 
