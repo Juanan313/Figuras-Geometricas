@@ -3,13 +3,17 @@ package org.mvpigs.formGeom;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
-public class RectanguloTest extends TestCase {
+public class RectanguloTest {
+    Rectangulo rectangulo = new Rectangulo(6.0, 5.0);
     @Test
     public void RectanguloTestConstructor() {
-        //Rectangulo rectangulo = new Rectangulo(6.0, 5.0);
-        // assertEquals(6.0, rectangulo.getAltura(), 0.1);
-        assertEquals(1, 1);
-    }
-    
 
+        assertEquals(6.0, rectangulo.getAltura(), 0.1);
+        assertEquals(5.0, rectangulo.getAncho(),0.1);
+    }
+    @Test
+    public void RectanguloTestArea() {
+
+        assertEquals(30.0, rectangulo.calcularArea(), 0.1);
+    }
 }
