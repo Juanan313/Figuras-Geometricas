@@ -14,11 +14,16 @@ public class Figuras {
 
         Circulo circulo = new Circulo("Circulo", 1.5);
         Circulo circulo2 = new Circulo(2.5);
+        
+        Cuadrado cuadrado = new Cuadrado("cuadrado", 2.0);
+        Cuadrado cuadrado2 = new Cuadrado(5.0);
 
         figuras.add(rectangulo);
         figuras.add(rectangulo2);
         figuras.add(circulo);
         figuras.add(circulo2);
+        figuras.add(cuadrado);
+        figuras.add(cuadrado2);
 
         for (FiguraGeometrica figura : figuras) {
             System.out.println("Area del "+figura.getNombre()+" es: "+figura.calcularArea());
