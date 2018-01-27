@@ -1,8 +1,7 @@
 package org.mvpigs.formGeom;
 
-import static org.junit.Assert.assertEquals;
-
 import org.junit.Test;
+import static org.junit.Assert.assertEquals;
 
 /**
  * CuadradoTest
@@ -15,14 +14,17 @@ public class CuadradoTest {
     @Test
     public void cuadradoTestConstructor() {
 
+        System.out.println(cuadrado.getLado());
+        System.out.println(cuadrado2.getLado());
         assertEquals("cuadrado", cuadrado.getNombre());
-        assertEquals(5.0, cuadrado2.getLado());
-
-    protected void cuadradoTestCalcularArea() {
-
-        assertEquals(20.0,cuadrado2.calcularArea());
-        assertEquals(8.0, cuadrado.calcularArea());        
+        assertEquals(5.0, cuadrado2.getLado(), 0.1);
     }
+    @Test
+    public void cuadradoTestCalcularArea() {
+
+        assertEquals(25.0,cuadrado2.calcularArea(), 0.1);
+        assertEquals(4.0, cuadrado.calcularArea(), 0.1);        
     }
+    
 
 }
