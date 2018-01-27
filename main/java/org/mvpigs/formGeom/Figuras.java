@@ -18,12 +18,18 @@ public class Figuras {
         Cuadrado cuadrado = new Cuadrado("cuadrado", 2.0);
         Cuadrado cuadrado2 = new Cuadrado(5.0);
 
+        Elipse elipse = new Elipse("Elipse", 3.0, 2.0);
+        Elipse elipse1 = new Elipse(4.0,3.0);
+    
+
         figuras.add(rectangulo);
         figuras.add(rectangulo2);
         figuras.add(circulo);
         figuras.add(circulo2);
         figuras.add(cuadrado);
         figuras.add(cuadrado2);
+        figuras.add(elipse);
+        figuras.add(elipse1);
 
         for (FiguraGeometrica figura : figuras) {
             System.out.println("Area del "+figura.getNombre()+" es: "+figura.calcularArea());
