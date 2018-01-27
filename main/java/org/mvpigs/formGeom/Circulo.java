@@ -32,7 +32,7 @@ public class Circulo extends FiguraGeometrica {
     public double getRadio() {
         return radio;
     }
-
+    @Override
     public double calcularArea() {
         return Math.PI*(Math.pow(getRadio(), 2));
     }

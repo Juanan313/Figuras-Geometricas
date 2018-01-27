@@ -31,7 +31,7 @@ public class Cuadrado extends FiguraGeometrica {
     public double getLado() {
         return lado;
     }
-
+    @Override
     public double calcularArea() {
         return lado * lado;
     }

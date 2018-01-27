@@ -50,6 +50,7 @@ public class Rectangulo extends FiguraGeometrica {
         this.ancho = ancho;
     }
 
+    @Override
     public double calcularArea() {
         return getAltura() * getAncho();
         
