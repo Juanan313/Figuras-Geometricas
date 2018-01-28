@@ -1,7 +1,8 @@
 package org.mvpigs.formGeom;
 
 public abstract class FiguraGeometrica {
-    String nombre = null;
+
+    private String nombre = null;
 
     public FiguraGeometrica() {
         this.nombre = "desconocido";
@@ -10,7 +11,7 @@ public abstract class FiguraGeometrica {
     public FiguraGeometrica(String nombre) {
         this.nombre = nombre;
     }
-    
+
     /**
      * @return the nombre
      */
@@ -26,4 +27,4 @@ public abstract class FiguraGeometrica {
     }
 
     public abstract double calcularArea();
-  }
+}

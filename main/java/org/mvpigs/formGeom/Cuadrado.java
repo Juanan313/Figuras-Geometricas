@@ -2,7 +2,7 @@ package org.mvpigs.formGeom;
 
 public class Cuadrado extends FiguraGeometrica {
 
-    double lado = 0d;
+    private double lado = 0d;
 
     public Cuadrado() {
         super();
@@ -31,6 +31,7 @@ public class Cuadrado extends FiguraGeometrica {
     public double getLado() {
         return lado;
     }
+
     @Override
     public double calcularArea() {
         return lado * lado;

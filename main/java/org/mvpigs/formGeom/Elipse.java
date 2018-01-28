@@ -1,9 +1,9 @@
 package org.mvpigs.formGeom;
 
 public class Elipse extends FiguraGeometrica {
-    
-    double radioMayor = 0d;
-    double radioMenor = 0d;
+
+    private double radioMayor = 0d;
+    private double radioMenor = 0d;
 
     public Elipse() {
         super();
@@ -19,9 +19,9 @@ public class Elipse extends FiguraGeometrica {
         super(nombre);
         this.radioMayor = radioMayor;
         this.radioMenor = radioMenor;
-        
+
     }
-    
+
     /**
      * @return the radioMayor
      */
@@ -50,8 +50,8 @@ public class Elipse extends FiguraGeometrica {
         this.radioMenor = radioMenor;
     }
 
-	@Override
-	public double calcularArea() {
-		return Math.PI * radioMayor * radioMenor;
-	}
+    @Override
+    public double calcularArea() {
+        return Math.PI * radioMayor * radioMenor;
+    }
 }

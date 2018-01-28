@@ -1,9 +1,10 @@
 package org.mvpigs.formGeom;
+
 import java.lang.Math.*;
 
 public class Circulo extends FiguraGeometrica {
 
-    double radio = 0d;
+    private double radio = 0d;
 
     public Circulo() {
         super();
@@ -32,9 +33,10 @@ public class Circulo extends FiguraGeometrica {
     public double getRadio() {
         return radio;
     }
+
     @Override
     public double calcularArea() {
-        return Math.PI*(Math.pow(getRadio(), 2));
+        return Math.PI * (Math.pow(getRadio(), 2));
     }
 
 }
