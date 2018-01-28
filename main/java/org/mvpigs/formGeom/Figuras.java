@@ -6,7 +6,7 @@ public class Figuras {
 
     public static void main(String[] args) {
 
-        private ArrayList<FiguraGeometrica> figuras = new ArrayList();
+        ArrayList<FiguraGeometrica> figuras = new ArrayList();
 
         Rectangulo rectangulo = new Rectangulo("Rectangulo1", 5.0, 6.0);
         Rectangulo rectangulo2 = new Rectangulo(2.0, 4.0);
